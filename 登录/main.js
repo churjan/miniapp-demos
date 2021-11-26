@@ -1,4 +1,5 @@
 import App from './App';
+import store from './store';
 import uView from '@/uni_modules/uview-ui';
 Vue.use(uView);
 import apis from '@/apis';
@@ -10,6 +11,7 @@ Vue.config.productionTip = false;
 App.mpType = 'app';
 const app = new Vue({
   ...App,
+  store,
 });
 app.$mount();
 // #endif
